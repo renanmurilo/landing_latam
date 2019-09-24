@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="pragma" content="no-cache">
+    <link rel="shortcut icon" href="https://www.pontosmultiplus.com.br/images/landing/bancos/assets/images/favicon.ico">
+    <link rel="stylesheet" href="src/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="src/assets/css/slick.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="src/assets/css/slick-theme.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="texto-banner">
+            <div class="texto-b">
+                <div class="texto-b-32">Transfira seus pontos do</div>
+                <div class="texto-b-32"><span>Programa Pontos CAIXA</span></div>
+                <div class="texto-b-29"> para o LATAM Pass e ganhe</div>
+                <div class="texto-b-70"><span>30%</span> de pontos extras</div>
+                <a href="#session1" class="rolagem">Saiba mais</a>
+            </div>
+
+            <div class="position-bg">
+                <div class="bg-white">
+                    <div class="texto-box">
+                        Preencha os campos abaixo para participar da promoção
+                    </div>
+                    <form id>
+                        <label for="cpf">Seu CPF</label>
+                        <input name="cpf" class="form-cpf" data-cpf="cpf" type="text" id="optin_numeroMultiplus" name="num_multiplus" maxlength="11" placeholder="" autocomplete="off" onkeypress="return onlynumber(event)">
+                        <div class="bg-captcha g-recaptcha" id="img_captcha" data-sitekey="6LceGQwTAAAAALbcNeOz9v7l6wXFJtJDEmpGOsK5"></div>
+                        <div class="texto-checkout">
+                            <input type="checkbox" name="aceito" id="aceito" value="S">
+                            <span class="regulamento">Declaro que li e aceito o <a href="https://promo.pontosmultiplus.com.br/regulamento/bancospontosextras_set2019.pdf">regulamento da promoção</a></span>
+                        </div>
+                        <div class="participe">
+                            <button class="btn" type="submit" data-submit="submit" id="optin_button">Participar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="session1">
+        <div class="container">
+            <h2>Veja como é fácil ganhar pontos extras!</h2>
+            <div class="app">
+                <div class="passo">
+                    <img src="src/assets/images/passo-a-passo.png" alt="">
+                </div>
+                <ul class="texto-passo hs">
+                    <li class="primeiro item">
+                        <h4>1. Cadastre-se na promoção</h4>
+                        <p>Insira seu CPF no começo desta página para se cadastrar na promoção.</p>
+                        <a href="#optin_numeroMultiplus" class="rolagem">Cadastrar</a>
+                    </li>
+    
+                    <li class="segundo item">
+                        <h4>2. Transfira seus pontos</h4>
+                        <p>Transfira no mínimo 5.000 pontos CAIXA para o LATAM Pass.</p>
+                        <a href="">Como transferir</a>
+                    </li>
+    
+                    <li class="terceiro item">
+                        <h4>3. Junte mais pontos</h4>
+                        <p>Ganhe 30% de pontos extras para trocar por viagens, produtos e/ou serviços.</p>
+                        <a href="">Ver ofertas para trocar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-regulamento">
+                <img class="box-bonus-desk" src="src/assets/images/box-bonus.png" alt="">
+                <img class="box-bonus-mobile" style="display: none;" src="src/assets/images/box-bonus-mobile.png" alt="">
+
+                <div class="texto-regulamento">
+                    <p class="borda"> EXTRAS </p>
+                    <h4>Tem mais na primeira transferência</h4>
+                    <p>Ganhe 1.000 pontos extras na primeira transferência de pontos CAIXA para o LATAM Pass.</p>
+                    <a id="link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Ver regulamento completo</a>
+                </div>
+            </div>
+            <div class="promocao">
+                <div class="conteudo-promo">
+                    <img src="src/assets/images/info.png" alt="">&nbsp;&nbsp;&nbsp; <span>Consulte o regulamento. Promoção <span class="frente">válida de 01 a 30/09/2019.</span></span>
+                </div>
+            </div>
+
+            <div class="regulamento-promo">
+                <div class="conteudo-regulamento">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Regulamento completo
+                                    </button>
+                                </h5>
+                                <span class="seta"><a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><img src="src/assets/images/seta.png" alt=""></a></span>
+                            </div>
+                        
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Campanha válida exclusivamente para Participantes Multiplus, que transferirem pontos da Caixa Econômica Federal (“Caixa”) para a Rede Multiplus no período entre 00:01hs do dia 01 de setembro às 23:59hs do dia 30 de setembro de 2019, horário oficial de Brasília. Serão concedidos 30% (trinta por cento) de pontos extras para os participantes que transferirem o mínimo de 5.000 (cinco mil) pontos. A campanha não é cumulativa com os pontos extras dos planos do Clube Multiplus, comercializados a partir de 11/01/2018, sendo que serão concedidos exclusivamente os 30% de pontos extras dessa Campanha. Os participantes que transferirem pontos da Caixa para a Multiplus pela primeira vez receberão o bônus adicional de1.000 (mil) Pontos Multiplus. Para participar da campanha, antes de solicitar a transferênciados pontos, é necessário se cadastrar no link da Campanha disponível no site (inserir link) e dar o aceite no regulamento e após transferir os pontos para a Rede Multiplus. Essa Campanha não é cumulativa com outras promoções e/ou campanhas vigentes na Multiplus ou na Caixa. Os pontos extras serão creditados na conta Multiplus do participante até 30/10/2019. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="session2">
+        <div class="title">
+            <h2>Opções para trocar seus pontos</h2>
+        </div>
+
+        <div class="destinos carrossel-tipbar">
+            <div class="nacionais">
+                <p class="title-img">Voe com</p>
+                <img src="src/assets/images/img-nacionais.png" alt="">
+                <p class="texto-18">Destinos <br> <b>Nacionais</b></p>
+                <p class="texto-14">A partir de <br> <span class="texto-32">3.000</span> pontos <br>o trecho + taxas a partir de R$ 32,95</p>
+                <div class="botao">
+                    <a href="https://www.latampass.com">Resgate já</a>
+                </div>
+            </div>
+            <div class="america">
+                <p class="title-img">Voe com</p>
+                <img src="src/assets/images/img-america.png" alt="">
+                <p class="texto-18">Destinos na<br> <b>América do Sul</b></p>
+                <p class="texto-14">A partir de <br> <span class="texto-32">10.000</span> pontos <br>o trecho + taxas a partir de R$ 120,56</p>
+                <div class="botao">
+                    <a href="https://www.latampass.com">Resgate já</a>
+                </div>
+            </div>
+             <div class="europa">
+                 <p class="title-img">Voe com</p>
+                <img src="src/assets/images/img-europa.png" alt="">
+                <p class="texto-18">Destinos na<br> <b>Europa</b></p>
+                <p class="texto-14">A partir de <br> <span class="texto-32">31.000</span> pontos <br>o trecho + taxas a partir de R$ 120,56</p>
+                <div class="botao">
+                    <a href="https://www.latampass.com">Resgate já</a>
+                </div>
+            </div>
+             <div class="usa">
+                 <p class="title-img">Voe com</p>
+                <img src="src/assets/images/img-usa.png" alt="">
+                <p class="texto-18">Destinos nos<br> <b>Estados Unidos</b></p>
+                <p class="texto-14">A partir de <br> <span class="texto-32">33.000</span> pontos <br>o trecho + taxas a partir de R$ 120,56</p>
+                <div class="botao">
+                    <a href="https://www.latampass.com">Resgate já</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="botao-light">
+            <a href="https://www.latampass.com">Ver todos</a>
+        </div>
+
+        <div class="box-cadastro">
+            <div class="conteudo-cadastro">
+                <div class="texto-cadastro">
+                    <h2>Faça seu cadastro, é grátis!</h2>
+                    <p class="texto-21">Se você já era cadastrado na Multiplus, utilize o mesmo login e senha.</p>
+                </div>
+                <div class="botoes-cadastro">
+                    <div class="cadastre"><a href="https://www.latampass.com">Cadastre-se</a></div>
+                    <div class="faca"><a href="">Faça login</a></div>
+                </div>
+                <img class="box-cadastro-desk" src="src/assets/images/box-cadastro.png" alt="">
+                <img  class="box-cadastro-mobile" style="display:none;" src="src/assets/images/box-cadastro-mobile.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="src/assets/js/jquery.min.js"></script>
+    <script src="src/assets/js/bootstrap.min.js"></script>
+    <script src="src/assets/js/popper.min.js"></script>
+    <script src="src/assets/js/slick.min.js"></script>
+    <script src="src/assets/js/main.js"></script>
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=pt-BR"></script>
+</body>
+</html>
