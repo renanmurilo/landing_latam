@@ -353,24 +353,9 @@ template {
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* style */
-@font-face {
-  font-family: 'Latam Sans ST';
-  src: url('LatamSansST-Bold.woff2') format('woff2'),
-      url('LatamSansST-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Latam Sans ST';
-  src: url('LatamSansST-Regular.woff2') format('woff2'),
-      url('LatamSansST-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
-  font-family: 'Latam Sans ST';
+  font-family: 'webfontregular';
   background-color: #f5f5f5;
 }
 
@@ -431,8 +416,9 @@ body {
         height: 50px;
       }
       a:hover{
-        background-color: #e1e1e1;
-        transition: all 0.2s ease-in-out
+        background-color: #e9124c;
+        border: 2px solid #e9124c;
+        transition: all 0.2s ease-in-out;
       }
     }
   }
@@ -451,6 +437,22 @@ body {
         font-size: 16px;
         line-height: 120%;
         color: #303030;
+      }
+
+      .texto-box-1{
+        padding-top: 50px;
+        font-size: 16px;
+        line-height: 120%;
+        color: #303030;
+        text-align: center;
+      }
+
+      .texto-box-2{
+        padding-top: 80px;
+        font-size: 16px;
+        line-height: 120%;
+        color: #303030;
+        text-align: center;
       }
 
       form{
@@ -495,7 +497,7 @@ body {
 
         .participe{
           text-align: center;
-          margin-top: 25px;
+          margin-top: 8px;
 
           .btn{
             color: #ffffff;
@@ -540,6 +542,7 @@ body {
 
       li{
         list-style-type: none;
+        letter-spacing: .1px;
       }
 
     .primeiro{
@@ -575,7 +578,6 @@ body {
       a{
         text-decoration: underline;
         color: #10004f;
-        padding-bottom: 42px;
       }
     }
 
@@ -629,12 +631,10 @@ body {
       p{
         max-width: 380px;
         font-size: 16px;
+        letter-spacing: .1px;
       }
-      a{
+      .confira{
         text-decoration: underline;
-        color: #ffffff;
-        font-size: 16px;
-        cursor: pointer;
       }
     }
   }
@@ -732,13 +732,28 @@ hr{
       border-radius: 20px;
       position: relative;
 
-      .title-img{
+      .bg-branco{
         position: absolute;
-        top: 15px;
-        right: 48px;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: bold;
+        top: 8px;
+        right: 8px;
+        display: inline-flex;
+        background-color: #ffffff;
+        border-radius: 20px;
+        width: 125px;
+        height: 31px;
+
+        .title-img{
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: bold;
+          padding-left: 19px;
+          padding-top: 5px;
+        }
+
+        span{
+          padding-top: 3px;
+          padding-left: 10px;
+        }
       }
      
 
@@ -871,7 +886,8 @@ hr{
             text-decoration: none;
           }
           a:hover{
-            background-color: #e1e1e1;;
+            background-color: #e9124c;
+            border: 2px solid #e9124c;
             transition: all 0.2s ease-in-out;
           }
         }
@@ -964,9 +980,9 @@ hr{
           }
   
           .participe{
-            padding: 12px 5px 3px 5px;
+            padding: 8px 5px 3px 5px;
             height: 44px;
-            margin: 25px auto 0 auto;
+            margin: 0px auto 0 auto;
           }
         }
       }

@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="https://www.pontosmultiplus.com.br/images/landing/bancos/assets/images/favicon.ico">
     <link rel="stylesheet" href="src/assets/css/bootstrap.css">
     <link rel="stylesheet" href="src/assets/css/style.css">
+    <link rel="stylesheet" href="src/assets/fonts/stylesheet.css">
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" href="src/assets/css/slick.css">
     <!-- Add the slick-theme.css if you want default styling -->
@@ -33,16 +34,18 @@
                     <div class="texto-box">
                         Preencha os campos abaixo para participar da promoção
                     </div>
-                    <form id>
+                    <form>
                         <label for="cpf">Seu CPF</label>
-                        <input name="cpf" class="form-cpf" data-cpf="cpf" type="text" id="optin_numeroMultiplus" name="num_multiplus" maxlength="11" placeholder="" autocomplete="off" onkeypress="return onlynumber(event)">
+                        <input type="hidden" id="optin_codigoPromocao" name="var" value="1-8EOJOCG">
+                        <input class="form-cpf cadastro_input_text" data-cpf="cpf" type="tel" id="optin_numeroMultiplus" name="num_multiplus" maxlength="11" placeholder="" value="" autocomplete="off" onkeypress="return onlynumber(event)">
                         <div class="bg-captcha g-recaptcha" id="img_captcha" data-sitekey="6LceGQwTAAAAALbcNeOz9v7l6wXFJtJDEmpGOsK5"></div>
                         <div class="texto-checkout">
-                            <input type="checkbox" name="aceito" id="aceito" value="S">
+                            <input class="cadastro_input_checkbox" type="checkbox" name="aceito" id="aceito" value="S">
                             <span class="regulamento">Declaro que li e aceito o <a href="https://promo.pontosmultiplus.com.br/regulamento/bancospontosextras_set2019.pdf">regulamento da promoção</a></span>
+                            <p data-error="error" class="cadastro_msg_erro"></p>
                         </div>
                         <div class="participe">
-                            <button class="btn" type="submit" data-submit="submit" id="optin_button">Participar</button>
+                            <button class="btn cadastro_input_submit" type="submit" data-submit="submit" id="optin_button">Participar</button>
                         </div>
                     </form>
                 </div>
@@ -61,19 +64,16 @@
                     <li class="primeiro item">
                         <h4>1. Cadastre-se na promoção</h4>
                         <p>Insira seu CPF no começo desta página para se cadastrar na promoção.</p>
-                        <a href="#optin_numeroMultiplus" class="rolagem">Cadastrar</a>
                     </li>
     
                     <li class="segundo item">
                         <h4>2. Transfira seus pontos</h4>
                         <p>Transfira no mínimo 5.000 pontos CAIXA para o LATAM Pass.</p>
-                        <a href="">Como transferir</a>
                     </li>
     
                     <li class="terceiro item">
                         <h4>3. Junte mais pontos</h4>
                         <p>Ganhe 30% de pontos extras para trocar por viagens, produtos e/ou serviços.</p>
-                        <a href="">Ver ofertas para trocar</a>
                     </li>
                 </ul>
             </div>
@@ -86,7 +86,7 @@
                     <p class="borda"> EXTRAS </p>
                     <h4>Tem mais na primeira transferência</h4>
                     <p>Ganhe 1.000 pontos extras na primeira transferência de pontos CAIXA para o LATAM Pass.</p>
-                    <a id="link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Ver regulamento completo</a>
+                    <p class="confira">Confira abaixo termos e condições</p>
                 </div>
             </div>
             <div class="promocao">
@@ -102,7 +102,7 @@
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Regulamento completo
+                                        Termos e condições
                                     </button>
                                 </h5>
                                 <span class="seta"><a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><img src="src/assets/images/seta.png" alt=""></a></span>
@@ -129,7 +129,10 @@
 
         <div class="destinos carrossel-tipbar">
             <div class="nacionais">
-                <p class="title-img">Voe com</p>
+                <div class="bg-branco">
+                     <p class="title-img">Voe com</p>
+                     <span><img src="src/assets/images/logo-latam.png" alt=""></span>
+                </div>
                 <img src="src/assets/images/img-nacionais.png" alt="">
                 <p class="texto-18">Destinos <br> <b>Nacionais</b></p>
                 <p class="texto-14">A partir de <br> <span class="texto-32">3.000</span> pontos <br>o trecho + taxas a partir de R$ 32,95</p>
@@ -138,7 +141,10 @@
                 </div>
             </div>
             <div class="america">
-                <p class="title-img">Voe com</p>
+                <div class="bg-branco">
+                     <p class="title-img">Voe com</p>
+                     <span><img src="src/assets/images/logo-latam.png" alt=""></span>
+                </div>
                 <img src="src/assets/images/img-america.png" alt="">
                 <p class="texto-18">Destinos na<br> <b>América do Sul</b></p>
                 <p class="texto-14">A partir de <br> <span class="texto-32">10.000</span> pontos <br>o trecho + taxas a partir de R$ 120,56</p>
@@ -147,7 +153,10 @@
                 </div>
             </div>
              <div class="europa">
-                 <p class="title-img">Voe com</p>
+                <div class="bg-branco">
+                    <p class="title-img">Voe com</p>
+                    <span><img src="src/assets/images/logo-latam.png" alt=""></span>
+                </div>
                 <img src="src/assets/images/img-europa.png" alt="">
                 <p class="texto-18">Destinos na<br> <b>Europa</b></p>
                 <p class="texto-14">A partir de <br> <span class="texto-32">31.000</span> pontos <br>o trecho + taxas a partir de R$ 120,56</p>
@@ -156,7 +165,10 @@
                 </div>
             </div>
              <div class="usa">
-                 <p class="title-img">Voe com</p>
+                 <div class="bg-branco">
+                     <p class="title-img">Voe com</p>
+                     <span><img src="src/assets/images/logo-latam.png" alt=""></span>
+                </div>
                 <img src="src/assets/images/img-usa.png" alt="">
                 <p class="texto-18">Destinos nos<br> <b>Estados Unidos</b></p>
                 <p class="texto-14">A partir de <br> <span class="texto-32">33.000</span> pontos <br>o trecho + taxas a partir de R$ 120,56</p>
@@ -192,6 +204,17 @@
     <script src="src/assets/js/popper.min.js"></script>
     <script src="src/assets/js/slick.min.js"></script>
     <script src="src/assets/js/main.js"></script>
+    <script type="text/javascript" src="https://www.pontosmultiplus.com.br/images/landing/itau/assets/javascript/functions.js"></script>
+    <script type="text/javascript" src="https://www.pontosmultiplus.com.br/images/landing/itau/assets/javascript/jquery.cookie.js"></script>
+    <script type="text/javascript" src="https://www.pontosmultiplus.com.br/images/landing/itau/assets/javascript/lazyImg.js"></script>
+    <script type="text/javascript" src="https://www.pontosmultiplus.com.br/images/landing/itau/assets/javascript/function-modal.js"></script>
+    <script type="text/javascript" src="https://www.pontosmultiplus.com.br/aceitePromocao/assets/js/ad-partic-promo.js"></script>
     <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=pt-BR"></script>
+    <script type="text/javascript" src="https://www.pontosmultiplus.com.br/images/landing/itau/assets/javascript/placeholder.js"></script>
+    <script type="text/javascript" src="https://www.pontosmultiplus.com.br/images/landing/itau/assets/javascript/destino.js"></script>
+    <script type="text/javascript" src="https://www.multiplusfidelidade.com.br/home/resources/assets/js/s_code.js"></script>
+    <script type="text/javascript" src="https://www.multiplusfidelidade.com.br/home/resources/assets/js/functionsCatalyst.js"></script>
+    <script type="text/javascript" src="https://www.pontosmultiplus.com.br/images/landing/itau/assets/javascript/validcpf.min.js"></script>
+    <script type="text/javascript" src="https://www.pontosmultiplus.com.br/images/landing/itau/assets/javascript/bundle.js"></script>
 </body>
 </html>
